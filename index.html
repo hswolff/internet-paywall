@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" /> 
+	<title>the GREAT INTERNET PAYWALL</title>
+	<link type="text/css" href="./css/jquery-ui-1.8rc2.custom.css" rel="stylesheet" />	
+	<link type="text/css" href="./css/style.css" rel="stylesheet" /> 
+	<script type="text/javascript" src="./js/jquery-1.4.2.min.js"></script> 
+	<script type="text/javascript" src="./js/jquery-ui-1.8rc2.custom.min.js"></script> 
+	<script type="text/javascript" src="./js/jquery.ui.core.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.ui.widget.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.ui.mouse.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.ui.draggable.min.js"></script>
+	<script type="text/javascript">
+	$(function() {
+		$("#dialog").dialog({
+			autoOpen: false,
+			height: 340,
+			width: 470,
+			modal: true
+		});
+		$('#warning').click(function() {
+			$('#dialog').dialog('open');
+			return false;
+		});
+	});
+	</script>
+</head>
+
+<body>
+
+<div id="splashBox">
+	<h1>The Internet has recently decided that it is in their best interest to charge for access.</h1>
+	<h1>To access the Internet you must now pay.</h1>
+	<img src="./images/paypal.gif" class="paypal" id="warning" />
+	<img src="./images/stopSignMan.png" title="Stop!  By Golly!" id="stopSignMan" />
+</div>
+<div id="dialog" title="Warning:  This is Satire!">
+	<p>This website was made as a response to sites requiring paid subscriptions to access their content.  I don't really have a message in response to these sites - I just like jokes.  I hope you found this site funny.</p>
+	<p>Please feel free to donate for server costs.  <a href="http://harrywolff.com/contact/">Or e-mail me.</a>  Or dance.  The choice is yours.</p>
+</div>
+
+</body>
+</html>
